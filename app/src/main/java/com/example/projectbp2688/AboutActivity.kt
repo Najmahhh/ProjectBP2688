@@ -1,5 +1,6 @@
 package com.example.projectbp2688
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -12,7 +13,8 @@ class AboutActivity : AppCompatActivity() {
         val imgCall:ImageView = findViewById(R.id.imageView3)
         //event saat image di klik
         imgCall.setOnClickListener {
-            vall callIntent:Intent.
+            val intentHome = Intent(this, HomeActivity::class.java)
+            startActivity(intentHome)
         }
     }
 }
